@@ -13,7 +13,7 @@ class HTMLNODE:
             return ''
         string = ''
         for k in self.props:
-            string += f" {k}={self.props[k]} "
+            string += f" {k}={self.props[k]}"
         return string
 
     def __repr__(self):
