@@ -1,8 +1,8 @@
-from textnode import TextNode
+from textnode import TEXTNODE
 from htmlnode import HTMLNODE
 def main():
-    node = TextNode("this is a text node", "bold", "https://www.boot.dev")
-    n2 = TextNode("this is a text node", "bold", "https://www.boot.dev")
+    node = TEXTNODE("this is a text node", "bold", "https://www.boot.dev")
+    n2 = TEXTNODE("this is a text node", "bold", "https://www.boot.dev")
     print(node.__eq__(n2))
     values = node.__repr__()
     print(values)
