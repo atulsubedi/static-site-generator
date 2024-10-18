@@ -28,7 +28,7 @@ def extract_markdown_images(text):
     alt_text = (re.findall(r"\[(.*?)\]", text))
     url = (re.findall(r"\((.*?)\)", text))
     for i in range(0, len(alt_text)):
-          tup_list.append(tuple((alt_text[i], url[i])))  
+          tup_list.append(tuple((alt_text[i], url[i])))
     return tup_list
 
 
@@ -41,7 +41,7 @@ def extract_markdown_links(text):
     return tup_list
 
 
-    
+
 def split_nodes_image(old_nodes):
     new_nodes = []
     for old_node in old_nodes:
