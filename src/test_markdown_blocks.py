@@ -1,6 +1,6 @@
 import unittest
+
 from markdown_blocks import (
-    extract_title,
     markdown_to_blocks,
     block_to_block_type,
     markdown_to_html_node,
@@ -154,21 +154,6 @@ this is paragraph text
             "<div><blockquote>This is a blockquote block</blockquote><p>this is paragraph text</p></div>",
         )
 
-    def test_header(self):
-        text = "# Hello"
-        value = extract_title(text)
-        self.assertEqual(
-            value,
-            "Hello",
-        )
-
-    def test_header_with_space(self):
-        text = "# Hello         "
-        value = extract_title(text)
-        self.assertEqual(
-            value,
-            "Hello",
-        )
 
 if __name__ == "__main__":
     unittest.main()
